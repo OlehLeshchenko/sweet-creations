@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '../../node_modules/normalize.css/normalize.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --text-color: #000000;
+    --text-font: 'Roboto', sans-serif;
+    --subtitle: 2rem;
+    --light-text-color: #ffffff;
+    --decoration-font: "Pacifico", cursive;
+    --main-background: #FFF8F8;
+    --primary-container-color: #FFD9E2;
+    --secondary-container-color: #2B151C;
+    --primary-text: #8C4A60;
+    --max-container-width: 1148px; /*1128px*/
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--text-font);
+}
+
+body{
+    background-color: var(--main-background);
+}
+
+a{
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.text{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+.container {
+    max-width: var(--max-container-width);
+    padding: 0 20px;
+    margin-bottom: auto;
+}
